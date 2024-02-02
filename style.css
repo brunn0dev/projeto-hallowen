@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(136.16deg,
+            rgba(91, 135, 75, 0.97) 12.91%, rgba(12, 55, 32, 0.87) 87.68%);
+    );
+    width: 100%;
+    min-height: 100vh;
+    padding: 12px 60px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    text-align: justify;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F8F8FD;
+    text-decoration: none;
+    position: relative;
+    bottom: -14px;
+}
+
+.nav-link:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+    background-color: #FF6600;
+    transition: 1s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.btn-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F8F8FD;
+    text-decoration: none;
+    position: relative;
+    bottom: 1px;
+    cursor: pointer;
+}
+
+.btn-link:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+    background-color: #FF6600;
+    transition: 1s ease;
+}
+
+
+.btn-link {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 41px;
+}
+
+.btn-link:hover {
+    opacity: 0.7;
+    background-color: #FF6600;
+    top: 5px
+}
+
+.section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container-left {
+    width: 50%;
+    height: 450px;
+    position: relative;
+    
+}
+
+.container-left img {
+    width: 77%;
+    position: absolute;
+    bottom: 35px;
+    left: -4%;
+    animation: moveAbobora 2s infinite alternate ease-in-out;
+}
+
+.container-left-info {
+    color: white;
+    position: absolute;
+    bottom: 89px;
+    left: 179px;
+
+    padding-right: 20px;
+    border-right: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 65px;
+}
+
+.container-left-info::after {
+    content: "";
+    width: 12px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: -6px;
+    top: -5px;
+
+}
+
+.container-left-info p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    left: 10px;
+    margin-left: -14px;
+}
+
+.container-height {
+    display: flex;
+    flex-direction: column;
+    margin-top: 119px;
+    width: 420px;
+    gap: 35px;
+}
+
+h2 {
+    color: #F8F8FD;
+}
+
+.info p:first-child {
+    color: #F8F8FD;
+    font: 20px;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.info p:last-child {
+    color: #F8F8FD;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action button{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    color: #F8F8FD;
+    background-image: url("./assets/botao.png");
+    background-color: transparent;
+    border: none;
+    padding: 41px 85px;
+    cursor: pointer;
+}
+.action button:hover{
+    opacity: 0.5;
+    color: #F8F8FD;
+}
+
+
+.action a{
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+    margin-top: -56px;
+    color: #FF6600;
+}
+
+.action a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    color: #F8F8FD;
+}
+
+.see{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 0px;
+    background-color: transparent;
+    display: block;
+    margin: 12px auto;
+    padding: 20px 37px;
+    cursor: pointer;
+    border-radius: 42px;
+    margin-top: 27px;
+    border-color: white;
+    margin-left: 392px;
+}
+
+.see:hover{
+    opacity: 0.5;
+}
+
+@keyframes moveAbobora{
+    from{
+        transform:translate(-5%, -5%) rotate(15deg);
+    }
+    to{
+        transform: translate(0, 0) rotate(-15deg);
+    }
+}
